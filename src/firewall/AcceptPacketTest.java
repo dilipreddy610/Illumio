@@ -36,10 +36,6 @@ public class AcceptPacketTest {
 	public void testIPAdress() {
 		Firewall firewall = new Firewall("testFile.csv");
 		assertFalse(firewall.accept_packet("outbound", "udp", 54, "300.168.100.124"));
-		//assertTrue(firewall.accept_packet("outbound", "udp", 47, "192.167.100.124"));
-		//assertTrue(firewall.accept_packet("outbound", "udp", 54, "192.168.228.89"));
-		//assertTrue(firewall.accept_packet("inbound", "udp", 60, "192.168.223.5"));
-		//assertTrue(firewall.accept_packet("inbound", "udp", 61000, "0.168.100.125"));
 	}
 	
 	@Test
